@@ -120,6 +120,8 @@ address {
 }
 
 .overtitle-dark {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -129,7 +131,17 @@ address {
   margin-bottom: 20px;
 }
 
+.overtitle-dark::before {
+  content: "";
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: var(--overtitle-text-color-theme-dark);
+}
+
 .overtitle-light {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -137,6 +149,14 @@ address {
   text-transform: uppercase;
   color: var(--secondary-text-color-theme-light);
   margin-bottom: 20px;
+}
+
+.overtitle-light::before {
+  content: "";
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: var(--secondary-text-color-theme-light);
 }
 
 .main-title-dark {
