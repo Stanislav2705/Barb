@@ -296,26 +296,37 @@ address {
   display: flex;
 }
 
+/* .privilege-right {
+  margin-right: 130px;
+} */
+
 .privilege-list {
   display: flex;
   flex-wrap: wrap;
+  /* justify-content: space-between;
+  align-items: flex-start;
+  width: 370px; */
   margin-left: 100px;
   margin-right: 130px;
+  width: 370px;
 }
 
 .privilege-link {
   flex-basis: calc((100% - 60px) / 2);
   text-align: center;
   min-width: 170px;
-  height: 133px;
+  height: 130px;
+  background-color: #f7f7f7;
   padding: 20px 20px;
 }
 
-.privilege-list .bottom {
+.privilege-link:nth-child(even) {
   margin-top: 30px;
+  margin-left: 30px;
 }
 
 .number-achievements {
+  margin-bottom: 6px;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
@@ -328,7 +339,7 @@ address {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  /* text-align: center; */
+  text-align: center;
   color: var(--secondary-text-color-theme-light);
 }
 
@@ -377,15 +388,53 @@ address {
   color: var(--accent-color);
 }
 
+/* ========Секция Галерея=========== */
+.overtitle-light.galery {
+  margin-bottom: 44px;
+}
+
+.galery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.galery-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 /* =======Секция Контакты======== */
 
+.contacts {
+  display: flex;
+}
+
+.online-form {
+  min-width: 600px;
+}
+
+.contacts-section {
+  padding-left: 100px;
+}
+
+.contacts-links-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-links-list-item:last-child {
+  margin-bottom: 70px;
+}
+
 .twork-overtitle-dark {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--secondary-text-color-theme-dark);
+  /* color: var(--secondary-text-color-theme-dark); */
 }
 
 .contacts-links-list-link {
