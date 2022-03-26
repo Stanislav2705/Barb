@@ -244,6 +244,11 @@ address {
 
 /* =======Start Hero======= */
 .main-section {
+  background-image: url(../image/Slider\ img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-position: ;
 }
 
 .hero-main {
@@ -300,7 +305,7 @@ address {
   line-height: 1.18;
   letter-spacing: 0.05em;
   padding-bottom: 20px;
-  /* color: var(--secondary-text-color-theme-dark); */
+  color: var(--secondary-text-color-theme-dark);
 }
 
 /* =======End Hero======= */
