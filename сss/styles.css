@@ -104,20 +104,6 @@ address {
   background-color: var(--accent-color);
   color: var(--secondary-text-color-theme-dark);
 }
-.social-links-list-link {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-  margin-right: 40px;
-
-  color: var(--secondary-text-color-theme-light);
-}
-
-.social-links-list-link:hover,
-.social-links-list-link:focus {
-  color: var(--accent-color);
-}
 
 .overtitle-dark {
   display: flex;
@@ -257,10 +243,54 @@ address {
 /* =======End Header======= */
 
 /* =======Start Hero======= */
+.main-section {
+}
 
-.social-links-list {
+.hero-main {
+  position: relative;
+  padding: 200px 0;
   display: flex;
+}
+
+.hero-left-side {
+  position: absolute;
+  left: -110px;
+  bottom: 130px;
+  transform: rotate(-90deg);
+}
+
+.hero-right-site {
+  margin-left: 190px;
+}
+
+.social-list {
+  display: flex;
+  margin: 40px 0;
   transform: rotate(0.17deg);
+  align-items: center;
+}
+
+.social-list::before {
+  content: "";
+  margin-right: 40px;
+  width: 60px;
+  height: 1px;
+  background-color: var(--secondary-text-color-theme-light);
+}
+
+.social-links {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  margin-right: 40px;
+
+  color: var(--secondary-text-color-theme-light);
+}
+
+.social-links:hover,
+.social-links:focus {
+  color: var(--accent-color);
 }
 
 .basic-title-dark {
