@@ -60,6 +60,18 @@ address {
   margin-right: auto;
 }
 
+/* =======Скрытие заголовков====== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 /* ====== Start components======= */
 .modal-btn-dark {
   min-width: 160px;
@@ -75,13 +87,14 @@ address {
   text-transform: uppercase;
   cursor: pointer;
 
-  /* color: var(--secondary-text-color-theme-dark); */
+  color: var(--secondary-text-color-theme-dark);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-dark:hover,
 .modal-btn-dark:focus {
   background-color: var(--accent-color);
-  color: var(--secondary-text-color-theme-dark);
+  /* color: var(--secondary-text-color-theme-dark); */
 }
 .modal-btn-light {
   min-width: 160px;
@@ -97,6 +110,8 @@ address {
   text-transform: uppercase;
   cursor: pointer;
   color: var(--secondary-text-color-theme-light);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .modal-btn-light:hover,
@@ -185,6 +200,9 @@ address {
 /* ====== End components======= */
 /* ====== Start Header======= */
 .header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
   padding-bottom: 32px;
   padding-top: 32px;
 }
@@ -217,8 +235,8 @@ address {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-
-  /* color: var(--secondary-text-color-theme-dark); */
+  color: var(--secondary-text-color-theme-dark);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-link:hover,
@@ -233,7 +251,8 @@ address {
   letter-spacing: 0.1em;
   margin-left: auto;
   margin-right: 40px;
-  /* color: var(--secondary-text-color-theme-dark); */
+  color: var(--secondary-text-color-theme-dark);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-number:hover,
@@ -243,36 +262,45 @@ address {
 /* =======End Header======= */
 
 /* =======Start Hero======= */
-.main-section {
-  background-image: url(../image/Slider\ img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-position: ;
-}
-
 .hero-main {
-  position: relative;
-  padding: 200px 0;
+  /* position: relative; */
+  /* padding: 200px 0; */
   display: flex;
 }
 
 .hero-left-side {
-  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 26px;
+  padding-bottom: 40px;
+  width: 100px;
+  /* position: absolute;
   left: -110px;
   bottom: 130px;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg); */
 }
 
 .hero-right-site {
-  margin-left: 190px;
+  background-image: url(../image/Slider\ img.jpg);
+  /* background-size: cover; */
+  background-color: #303030;
+  padding-top: 272px;
+  padding-bottom: 206px;
+  padding-left: 100px;
+  flex-grow: 1;
+  /* margin-left: 190px; */
 }
 
 .social-list {
   display: flex;
-  margin: 40px 0;
-  transform: rotate(0.17deg);
   align-items: center;
+  /* margin: 40px 0; */
+  /* transform: rotate(0.17deg); */
+}
+
+.social-list-header {
+  transform: rotate(-90deg);
+  transform-origin: left top;
 }
 
 .social-list::before {
