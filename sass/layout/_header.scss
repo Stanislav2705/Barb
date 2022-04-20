@@ -58,3 +58,8 @@
 .contact-number:focus {
   color: var(--accent-color);
 }
+
+.social-list-header {
+  transform: rotate(-90deg);
+  transform-origin: left top;
+}

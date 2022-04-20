@@ -380,6 +380,11 @@ address {
   color: var(--accent-color);
 }
 
+.social-list-header {
+  transform: rotate(-90deg);
+  transform-origin: left top;
+}
+
 .hero-main {
   /* position: relative; */
   /* padding: 200px 0; */
