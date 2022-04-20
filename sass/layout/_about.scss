@@ -1,0 +1,21 @@
+.about-section {
+  display: flex;
+}
+
+.about-gallery {
+  display: flex;
+  margin-right: 64px;
+}
+
+.about-gallery-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.explanation {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+  color: var(--primary-text-color-theme-light);
+}

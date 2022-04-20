@@ -1,0 +1,16 @@
+.overtitle-light.galery {
+  margin-bottom: 44px;
+}
+
+.galery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.galery-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}

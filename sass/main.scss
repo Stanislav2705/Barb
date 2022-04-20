@@ -1,11 +1,22 @@
-body {
-  background-color: aqua;
-}
+@import "./utils/variables";
+@import "./utils/visually-hidden";
 
-h1 {
-  color: teal;
-}
+@import "./base/common";
+@import "./base/container";
 
-p {
-  color: aqua;
-}
+@import "./components/modal-btn";
+@import "./components/social-list";
+@import "./components/overtitle";
+@import "./components/main-title";
+@import "./components/description";
+@import "./components/basic-title-dark";
+@import "./components/socials-icon";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/services";
+@import "./layout/privilege";
+@import "./layout/masters";
+@import "./layout/galery";
+@import "./layout/contacts";

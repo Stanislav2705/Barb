@@ -1,0 +1,16 @@
+.description-dark,
+.description-light {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.description-dark {
+  color: var(--primary-text-color-theme-dark);
+}
+
+.description-light {
+  margin-bottom: 20px;
+  color: var(--primary-text-color-theme-light);
+}

@@ -1,0 +1,33 @@
+.social-list {
+  display: flex;
+  align-items: center;
+  /* margin: 40px 0; */
+  /* transform: rotate(0.17deg); */
+}
+
+.social-list::before {
+  content: "";
+  margin-right: 40px;
+  width: 60px;
+  height: 1px;
+  background-color: var(--secondary-text-color-theme-light);
+}
+
+.social-links {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--secondary-text-color-theme-light);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.social-links:hover,
+.social-links:focus {
+  color: var(--accent-color);
+}

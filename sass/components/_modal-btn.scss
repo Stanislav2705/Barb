@@ -1,0 +1,34 @@
+.modal-btn-dark,
+.modal-btn-light {
+  min-width: 160px;
+  padding: 12px 16px;
+  border: 1px solid var(--accent-color);
+  background-color: transparent;
+  border-radius: 25px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal-btn-dark {
+  color: var(--secondary-text-color-theme-dark);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-light {
+  color: var(--secondary-text-color-theme-light);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-dark:hover,
+.modal-btn-dark:focus,
+.modal-btn-light:hover,
+.modal-btn-light:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color-theme-dark);
+}

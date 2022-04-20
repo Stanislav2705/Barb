@@ -1,0 +1,28 @@
+.hero-main {
+  /* position: relative; */
+  /* padding: 200px 0; */
+  display: flex;
+}
+
+.hero-left-side {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 26px;
+  padding-bottom: 40px;
+  width: 100px;
+  /* position: absolute;
+  left: -110px;
+  bottom: 130px;
+  transform: rotate(-90deg); */
+}
+
+.hero-right-site {
+  background-image: url(./image/Slider.jpg);
+  /* background-size: cover; */
+  background-color: #303030;
+  padding-top: 272px;
+  padding-bottom: 206px;
+  padding-left: 100px;
+  flex-grow: 1;
+  /* margin-left: 190px; */
+}
