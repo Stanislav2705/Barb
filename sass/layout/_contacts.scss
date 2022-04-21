@@ -48,11 +48,11 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--secondary-text-color-theme-dark);
-}
 
-.twork-overtitle-dark::before {
-  margin-right: 20px;
-  background-color: var(--primary-text-color-theme-dark);
+  &::before {
+    margin-right: 20px;
+    background-color: var(--primary-text-color-theme-dark);
+  }
 }
 
 .contacts-links-list-link {

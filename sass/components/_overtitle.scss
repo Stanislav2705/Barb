@@ -12,24 +12,23 @@
 
 .overtitle-dark {
   color: var(--overtitle-text-color-theme-dark);
+  &::before {
+    content: "";
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    background-color: var(--overtitle-text-color-theme-dark);
+  }
 }
 
 .overtitle-light {
   color: var(--secondary-text-color-theme-light);
-}
 
-.overtitle-dark::before,
-.overtitle-light::before {
-  content: "";
-  margin-right: 20px;
-  width: 60px;
-  height: 1px;
-}
-
-.overtitle-dark::before {
-  background-color: var(--overtitle-text-color-theme-dark);
-}
-
-.overtitle-light::before {
-  background-color: var(--secondary-text-color-theme-light);
+  &::before {
+    content: "";
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    background-color: var(--secondary-text-color-theme-light);
+  }
 }

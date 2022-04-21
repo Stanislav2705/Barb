@@ -17,18 +17,22 @@
 .modal-btn-dark {
   color: var(--secondary-text-color-theme-dark);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color-theme-dark);
+  }
 }
 
 .modal-btn-light {
   color: var(--secondary-text-color-theme-light);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-btn-dark:hover,
-.modal-btn-dark:focus,
-.modal-btn-light:hover,
-.modal-btn-light:focus {
-  background-color: var(--accent-color);
-  color: var(--secondary-text-color-theme-dark);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color-theme-dark);
+  }
 }

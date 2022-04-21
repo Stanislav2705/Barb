@@ -36,11 +36,11 @@
   letter-spacing: 0.1em;
   color: var(--secondary-text-color-theme-dark);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.nav-list-link:hover,
-.nav-list-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact-number {
@@ -52,11 +52,11 @@
   margin-right: 40px;
   color: var(--secondary-text-color-theme-dark);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contact-number:hover,
-.contact-number:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .social-list-header {
