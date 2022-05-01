@@ -20,6 +20,12 @@
   clip: rect(0 0 0 0);
 }
 
+.header-container, .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 body {
   font-family: var(--primary-font-family);
 }
@@ -520,12 +526,6 @@ address {
   fill: #fff;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 @media screen and (max-width: 1199px) {
   .contact-number {
     display: none;
@@ -877,12 +877,6 @@ address {
 
 .footer {
   padding: 56px 0;
-}
-
-.footer-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .copyright {
